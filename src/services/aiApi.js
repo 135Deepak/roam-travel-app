@@ -1,4 +1,5 @@
-const AI_API_URL = "http://localhost:3001/api/chat";
+const API_URL =
+  import.meta.env.VITE_API_URL || "http://localhost:3001/api";
 
 export async function sendMessageToAI(message) {
   const response = await fetch(AI_API_URL, {
